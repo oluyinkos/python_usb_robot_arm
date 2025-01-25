@@ -63,7 +63,7 @@ LedOn =            BitPattern(0, 0, 1)
 class Arm(object):
     """Arm interface"""
     __slots__ = ['dev']
-    USB_VENDOR = 0x1267
+    USB_VENDOR = 0x067b
 
     def __init__(self):
         self.dev = usb.core.find(idVendor=Arm.USB_VENDOR)
